@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # ==============================================================================
 # Script: scripts/decouple-rename.sh
-# Purpose: Rename end4-enhanced to lviffy-shell across Quickshell & Hyprland
+# Purpose: Rename legacy shell to lviffy-shell across Quickshell & Hyprland
 # ==============================================================================
 set -euo pipefail
 
@@ -18,7 +18,7 @@ log_warn()    { echo -e "${YELLOW}[WARN]${NC} $1"; }
 log_err()     { echo -e "${RED}[ERROR]${NC} $1" >&2; }
 
 QS_DIR="$HOME/.config/quickshell"
-OLD_NAME="end4-enhanced"
+OLD_NAME="${1:-legacy-shell}"
 NEW_NAME="lviffy-shell"
 
 OLD_PATH="$QS_DIR/$OLD_NAME"

@@ -1139,7 +1139,7 @@ ContentPage {
                                     topMargin: 4
                                     bottomMargin: 4
                                 }
-                                text: Config.options.background.widgets.github.username ?? "rubberpirate"
+                                text: Config.options.background.widgets.github.username ?? "lviffy"
                                 onEditingFinished: {
                                     Config.options.background.widgets.github.username = text;
                                 }

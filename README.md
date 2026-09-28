@@ -81,7 +81,7 @@ lviffy-dots/
 │   ├── 06-wallpaper-setup.sh  # Wallpaper directories & mpvpaper check
 │   └── 07-shell-defaults.sh   # Sets Fish as default login shell
 ├── scripts/                    # Maintenance & migration utilities
-│   ├── decouple-rename.sh     # Renames end4-enhanced -> lviffy-shell
+│   ├── decouple-rename.sh     # Renames legacy shell -> lviffy-shell
 │   ├── sanitize-paths.sh      # Normalizes /home/lviffy to $HOME
 │   └── export-clean-config.sh # Sanitizes illogical-impulse config.example.json
 ├── pkglist/

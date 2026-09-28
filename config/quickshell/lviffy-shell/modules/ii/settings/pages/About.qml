@@ -26,7 +26,7 @@ ContentPage {
         Quickshell.execDetached([
             "kitty", "--hold",
             "bash", "-c",
-            "killall qs; sleep 0.5; cd ~/.config/quickshell/ && rm -rf end4-pC && git clone https://github.com/pctrade/end4-pC.git && nohup qs -c end4-pC > /tmp/qs.log 2>&1 &"
+            "killall qs; sleep 0.5; cd ~/.config/quickshell/ && rm -rf lviffy-shell && git clone https://github.com/lviffy/lviffy-dots.git && nohup qs -c lviffy-shell > /tmp/qs.log 2>&1 &"
         ])
         Qt.callLater(() => GlobalStates.settingsOpen = false)
     }

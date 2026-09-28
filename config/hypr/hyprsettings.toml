@@ -3,7 +3,7 @@
 # Changing it may or may not cause breakage/issues
 version = "0.9.3.64"
 
-user = "rubberpirate@thousand-sunny@Arch_Linux" #change this to yours
+user = "lviffy@archlinux" #change this to yours
 
 # While running, config is on memory.
 # Changing while HyprSettings is open

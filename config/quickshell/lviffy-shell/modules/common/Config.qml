@@ -336,7 +336,7 @@ Singleton {
 
                     property JsonObject github: JsonObject {
                         property bool enable: false
-                        property string username: "rubberpirate"
+                        property string username: "lviffy"
                         property string placementStrategy: "free"
                         property real x: 100
                         property real y: 500
