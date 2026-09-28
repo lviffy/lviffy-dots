@@ -1,0 +1,15 @@
+# Local active configuration (contains user API keys & personal tokens)
+config/illogical-impulse/config.json
+
+# Temporary files & caches
+*.tmp
+*.bak
+*.swp
+*~
+.DS_Store
+__pycache__/
+*.pyc
+
+# Local state
+.venv/
+.cache/
