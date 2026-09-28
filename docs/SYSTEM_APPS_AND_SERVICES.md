@@ -152,3 +152,114 @@ systemctl --user enable --now \
     ydotool.service \
     gnome-keyring-daemon.socket
 ```
+
+---
+
+## ⚡ 5. Deep Ecosystem Packages & Specialized Dev Toolchains
+
+Beyond Pacman and AUR, these tools are installed in your language runtimes and local paths:
+
+### 📦 Global NPM Tools (`npm install -g <package>`)
+```bash
+npm install -g \
+    vercel \
+    eas-cli \
+    snarkjs \
+    openclaw \
+    clawhub \
+    @okxweb3/a2a-node
+```
+
+### 🐍 Pipx & UV Standalone Python CLI Tools
+```bash
+# Via UV tools:
+uv tool install free-claude-code
+uv tool install graphifyy
+uv tool install nano-pdf
+
+# Via pipx:
+pipx install litellm
+pipx install weasyprint
+```
+
+### 🦀 Rust, ZK-Proofs & Smart Contract Tools
+- **Circom** (zk-SNARK circuit compiler):
+  ```bash
+  cargo install --git https://github.com/iden3/circom.git circom
+  ```
+- **Arbitrum Stylus**:
+  ```bash
+  cargo install --force cargo-stylus
+  ```
+- **Odra Smart Contracts**:
+  ```bash
+  cargo install cargo-odra
+  ```
+- **Foundry** (Ethereum smart contract development):
+  ```bash
+  curl -L https://foundry.paradigm.xyz | bash
+  foundryup
+  ```
+- **Noir / Nargo** (Zero-Knowledge programming language):
+  ```bash
+  curl -L https://raw.githubusercontent.com/noir-lang/noirup/main/install | bash
+  noirup
+  ```
+
+### 🍐 Pear (P2P App Runtime)
+- Installed at `~/.config/pear/bin` via Holepunch:
+  ```bash
+  npm install -g pear
+  ```
+
+### 🐹 Go Development
+- **gopls** (Language Server):
+  ```bash
+  go install golang.org/x/tools/gopls@latest
+  ```
+
+---
+
+## 🧩 6. IDE Extensions (VS Code / Antigravity / VSCodium)
+
+To automatically restore all your active IDE extensions on a fresh machine:
+
+```bash
+extensions=(
+    anthropic.claude-code
+    carmelopullara.material-dark-extra
+    esbenp.prettier-vscode
+    fill-labs.dependi
+    github.vscode-github-actions
+    golang.go
+    llvm-vs-code-extensions.vscode-clangd
+    mermaidchart.vscode-mermaid-chart
+    mhutchie.git-graph
+    miguelsolorio.min-theme
+    ms-azuretools.vscode-containers
+    ms-azuretools.vscode-docker
+    ms-python.debugpy
+    ms-python.python
+    ms-python.vscode-pylance
+    ms-python.vscode-python-envs
+    ms-toolsai.jupyter
+    ms-vscode.cmake-tools
+    ms-vscode.cpptools
+    ms-vscode.cpptools-extension-pack
+    openai.chatgpt
+    redhat.java
+    ritwickdey.liveserver
+    rust-lang.rust-analyzer
+    shd101wyy.markdown-preview-enhanced
+    tamasfe.even-better-toml
+    usernamehw.errorlens
+    vscjava.vscode-gradle
+    vscjava.vscode-java-pack
+    wakatime.vscode-wakatime
+)
+
+for ext in "${extensions[@]}"; do
+    code --install-extension "$ext" --force 2>/dev/null || true
+    antigravity-ide --install-extension "$ext" --force 2>/dev/null || true
+done
+```
