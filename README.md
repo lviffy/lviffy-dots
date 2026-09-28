@@ -115,3 +115,15 @@ Personal API keys (e.g. OpenRouter keys) should never be committed to Git.
   ```bash
   ./scripts/export-clean-config.sh
   ```
+
+---
+
+## 📦 Full Software Suite & Development Toolchains
+
+Looking to restore your full development suite, databases, AI tools, browsers, and systemd services on a clean installation?
+
+- 📄 Read the complete inventory: [docs/SYSTEM_APPS_AND_SERVICES.md](docs/SYSTEM_APPS_AND_SERVICES.md)
+- 🚀 Or run the automated all-in-one extra software provisioner:
+  ```bash
+  ./setup/install-all-extras.sh
+  ```
