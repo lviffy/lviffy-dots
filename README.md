@@ -1,4 +1,4 @@
-# 🌌 lviffy-dots
+# lviffy-dots
 
 > **A standalone, reproducible, and beautifully crafted Hyprland + Quickshell (lviffy-shell) desktop suite for pure Arch Linux.**
 
@@ -9,7 +9,7 @@
 
 ---
 
-## ✨ Features
+## Features
 
 - **Window Compositor**: Hyprland v0.56+ with custom `cleanDecel` / `cleanExit` non-cartoonish snappy animations, smooth window tile scaling, and subtle workspace fades.
 - **Desktop Shell**: **`lviffy-shell`** (customized Quickshell environment with 31+ refined QML components, iOS/macOS frosted glass sliders, quick toggles, dock, and sidebar).
@@ -26,7 +26,7 @@
 
 ---
 
-## 🚀 One-Command Installation on Pure Arch
+## One-Command Installation on Pure Arch
 
 On a fresh / minimal Arch Linux installation, simply execute:
 
@@ -48,7 +48,7 @@ chmod +x install.sh
 
 ---
 
-## ⌨️ Essential Keybindings
+## ⌨ Essential Keybindings
 
 | Keybinding | Action | Description |
 | :--- | :--- | :--- |
@@ -66,47 +66,47 @@ chmod +x install.sh
 
 ---
 
-## 🛠️ Repository Structure
+## Repository Structure
 
 ```text
 lviffy-dots/
-├── install.sh                  # Master orchestrator script
-├── setup/                      # Modular installation stages
-│   ├── 00-detect-system.sh     # System pre-flight & NVIDIA detection
-│   ├── 01-aur-helper.sh       # yay / paru detection & auto-bootstrap
-│   ├── 02-packages.sh         # Package installations
-│   ├── 03-fonts.sh            # Typography deployment
-│   ├── 04-configs.sh          # Atomic symlink deployment with backups
-│   ├── 05-python-venv.sh      # PEP 668 Quickshell Python virtualenv
-│   ├── 06-wallpaper-setup.sh  # Wallpaper directories & mpvpaper check
-│   └── 07-shell-defaults.sh   # Sets Fish as default login shell
-├── scripts/                    # Maintenance & migration utilities
-│   ├── decouple-rename.sh     # Renames legacy shell -> lviffy-shell
-│   ├── sanitize-paths.sh      # Normalizes /home/lviffy to $HOME
-│   └── export-clean-config.sh # Sanitizes illogical-impulse config.example.json
-├── pkglist/
-│   ├── pacman.txt              # Official Arch Linux packages
-│   └── aur.txt                 # AUR packages
-├── config/                     # Source dotfiles symlinked to ~/.config/
-│   ├── hypr/
-│   ├── quickshell/lviffy-shell/
-│   ├── illogical-impulse/
-│   ├── kitty/
-│   ├── fish/
-│   ├── starship.toml
-│   ├── matugen/
-│   ├── cava/
-│   ├── fastfetch/
-│   ├── wlogout/
-│   ├── fuzzel/
-│   └── fontconfig/
-├── fonts/                      # SF-Pro, Inter, Google Sans Flex
-└── assets/                     # Starter wallpapers & media assets
+ install.sh                  # Master orchestrator script
+ setup/                      # Modular installation stages
+    00-detect-system.sh     # System pre-flight & NVIDIA detection
+    01-aur-helper.sh       # yay / paru detection & auto-bootstrap
+    02-packages.sh         # Package installations
+    03-fonts.sh            # Typography deployment
+    04-configs.sh          # Atomic symlink deployment with backups
+    05-python-venv.sh      # PEP 668 Quickshell Python virtualenv
+    06-wallpaper-setup.sh  # Wallpaper directories & mpvpaper check
+    07-shell-defaults.sh   # Sets Fish as default login shell
+ scripts/                    # Maintenance & migration utilities
+    decouple-rename.sh     # Renames legacy shell -> lviffy-shell
+    sanitize-paths.sh      # Normalizes /home/lviffy to $HOME
+    export-clean-config.sh # Sanitizes illogical-impulse config.example.json
+ pkglist/
+    pacman.txt              # Official Arch Linux packages
+    aur.txt                 # AUR packages
+ config/                     # Source dotfiles symlinked to ~/.config/
+    hypr/
+    quickshell/lviffy-shell/
+    illogical-impulse/
+    kitty/
+    fish/
+    starship.toml
+    matugen/
+    cava/
+    fastfetch/
+    wlogout/
+    fuzzel/
+    fontconfig/
+ fonts/                      # SF-Pro, Inter, Google Sans Flex
+ assets/                     # Starter wallpapers & media assets
 ```
 
 ---
 
-## 🔒 Secret Management
+## Secret Management
 
 Personal API keys (e.g. OpenRouter keys) should never be committed to Git.
 - `config/illogical-impulse/config.example.json` provides the clean template.
@@ -118,12 +118,12 @@ Personal API keys (e.g. OpenRouter keys) should never be committed to Git.
 
 ---
 
-## 📦 Full Software Suite & Development Toolchains
+## Full Software Suite & Development Toolchains
 
 Looking to restore your full development suite, databases, AI tools, browsers, and systemd services on a clean installation?
 
-- 📄 Read the complete inventory: [docs/SYSTEM_APPS_AND_SERVICES.md](docs/SYSTEM_APPS_AND_SERVICES.md)
-- 🚀 Or run the automated all-in-one extra software provisioner:
+-  Read the complete inventory: [docs/SYSTEM_APPS_AND_SERVICES.md](docs/SYSTEM_APPS_AND_SERVICES.md)
+-  Or run the automated all-in-one extra software provisioner:
   ```bash
   ./setup/install-all-extras.sh
   ```

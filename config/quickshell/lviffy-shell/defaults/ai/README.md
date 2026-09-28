@@ -1,5 +1,5 @@
-## A note about sources of the prompts
+# System Prompts
 
-- `ii-` prefixed ones are from illogical impulse
-- The Acchan one is from [Nyarch Assistant](https://github.com/NyarchLinux/NyarchAssistant) (GPLv3). I know there's already the Imouto one but this one's very 😭💢
-- `w-` prefixed ones... I don't remember what w stands for but these prompts are [*cough cough*] inspired by certain apps
+- `ii-Default.md`: Default system prompt for the quickshell sidebar AI assistant.
+- `w-FourPointedSparkle.md`: Conversational prompt tuned for clear, structured reasoning.
+- `w-OpenMechanicalFlower.md`: Concise, professional conversational prompt.

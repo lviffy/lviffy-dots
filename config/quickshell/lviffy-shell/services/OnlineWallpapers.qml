@@ -12,7 +12,7 @@ Singleton {
     property string provider:   "wallhaven"  // "wallhaven" | "unsplash"
     property string resolution: "1080p"      // "1080p" | "2K" | "4K"
     property string query:      ""           // empty keyword = random
-    property string category:   "general"    // wallhaven: "general"|"anime"|"people" / unsplash: "nature"|"city"|...
+    property string category:   "general"    // wallhaven: "general"|"nature"|"people" / unsplash: "nature"|"city"|...
     property string purity:     "sfw"        // wallhaven: "sfw"|"sketchy"|"nsfw"
     property bool   loading:    false
     property bool   appending:  false 

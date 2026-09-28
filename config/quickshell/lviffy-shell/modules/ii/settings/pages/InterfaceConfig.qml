@@ -134,44 +134,6 @@ ContentPage {
                             }
                         }
                     }
-
-                    Rectangle {
-                        Layout.fillWidth: true
-                        implicitHeight: weebCol.implicitHeight + 24
-                        radius: Appearance.rounding.normal
-                        color: Appearance.colors.colLayer1
-                        border.width: 1
-                        border.color: "transparent"
-
-                        ColumnLayout {
-                            id: weebCol
-                            anchors { fill: parent; margins: 12 }
-                            spacing: 8
-
-                            MaterialSymbol {
-                                text: "playing_cards"
-                                iconSize: Appearance.font.pixelSize.huge
-                                color: Appearance.colors.colPrimary
-                            }
-                            StyledText {
-                                text: Translation.tr("Weeb")
-                                font.pixelSize: Appearance.font.pixelSize.normal
-                                font.weight: Font.Medium
-                                color: Appearance.colors.colOnLayer1
-                            }
-                            ConfigSelectionArray {
-                                Layout.fillWidth: false
-                                Layout.alignment: Qt.AlignRight
-                                currentValue: Config.options.policies.weeb
-                                onSelected: newValue => { Config.options.policies.weeb = newValue }
-                                options: [
-                                    { displayName: Translation.tr("No"), icon: "close", value: 0 },
-                                    { displayName: Translation.tr("Yes"), icon: "check", value: 1 },
-                                    { displayName: Translation.tr("Closet"), icon: "ev_shadow", value: 2 }
-                                ]
-                            }
-                        }
-                    }
                 }
             }
 

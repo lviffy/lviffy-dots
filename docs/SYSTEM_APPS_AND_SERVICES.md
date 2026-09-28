@@ -1,11 +1,11 @@
-# 📦 Complete System Software, Services & Development Tools Guide
+# Complete System Software, Services & Development Tools Guide
 
 > **An exhaustive, single-source-of-truth inventory of every application, systemd service, CLI tool, developer runtime, and IDE extension installed on this machine.**  
 > Use this document when setting up a fresh Arch Linux installation to restore your complete workflow.
 
 ---
 
-## 📑 Table of Contents
+## Table of Contents
 1. [Systemd Services (System & User)](#1-systemd-services)
 2. [Desktop GUI Applications](#2-desktop-gui-applications)
 3. [Developer Runtimes & Compilers](#3-developer-runtimes--compilers)
@@ -17,9 +17,9 @@
 
 ---
 
-## ⚙️ 1. Systemd Services
+## 1. Systemd Services
 
-### 🔒 System-Level Services
+### System-Level Services
 Enable with `sudo systemctl enable --now <service>`:
 
 | Service | Purpose |
@@ -35,7 +35,7 @@ Enable with `sudo systemctl enable --now <service>`:
 | **`cups.service`** | Common Unix Printing System |
 | **`nvidia-persistenced.service`** | Keeps NVIDIA GPU initialized across sleep/wake states |
 
-### 👤 User-Level Services
+### User-Level Services
 Enable with `systemctl --user enable --now <service>`:
 
 | Service | Purpose |
@@ -48,16 +48,16 @@ Enable with `systemctl --user enable --now <service>`:
 
 ---
 
-## 🖥️ 2. Desktop GUI Applications
+## 2. Desktop GUI Applications
 
-### 🌐 Web Browsers
+### Web Browsers
 - **Google Chrome** (`google-chrome` - AUR) — Primary daily driver
 - **Zen Browser** (`zen-browser-bin` - AUR) — Gecko-based aesthetic browser
 - **Brave Browser** (`brave-bin` - AUR) — Chromium privacy browser
 - **Microsoft Edge** (`microsoft-edge-stable-bin` - AUR)
 - **Mozilla Firefox** (`firefox` - Official)
 
-### 💻 IDEs, Code Editors & AI Suites
+### IDEs, Code Editors & AI Suites
 - **Antigravity IDE** (`antigravity-ide` - AUR) & **Antigravity CLI** (`antigravity`)
 - **Visual Studio Code** (`visual-studio-code-bin` - AUR)
 - **VSCodium** (`vscodium-bin` - AUR)
@@ -70,7 +70,7 @@ Enable with `systemctl --user enable --now <service>`:
 - **Burp Suite** (`burpsuite` - Official) — Security & HTTP proxy testing
 - **Unity Hub** (`unityhub` - AUR) — Unity game engine
 
-### 🎨 Media, Graphics & Audio
+### Media, Graphics & Audio
 - **Spotify** (`spotify` - AUR)
 - **VLC Media Player** (`vlc` - Official)
 - **MPV** (`mpv` - Official) — Fast video player and engine for live wallpapers
@@ -79,7 +79,7 @@ Enable with `systemctl --user enable --now <service>`:
 - **EasyEffects** (`easyeffects` - Official) + `5db5-equalizer-lv2-bin` (AUR) — Audio equalizer & DSP
 - **Pwvucontrol** (`pwvucontrol` - AUR) — Modern PipeWire volume mixer
 
-### 💬 Social & Productivity
+### Social & Productivity
 - **Vesktop** (`vesktop` - AUR) — Enhanced Discord with Wayland screen-share audio
 - **Telegram Desktop** (`telegram-desktop` - Official)
 - **Zoom** (`zoom` - AUR)
@@ -91,7 +91,7 @@ Enable with `systemctl --user enable --now <service>`:
 
 ---
 
-## 🛠️ 3. Developer Runtimes & Compilers
+## 3. Developer Runtimes & Compilers
 
 - **Bun**: High-speed JavaScript/TypeScript runtime & package manager (`bun`)
 - **Node.js**: Standard JS runtime with `npm`, `yarn`, and `pnpm`
@@ -105,9 +105,9 @@ Enable with `systemctl --user enable --now <service>`:
 
 ---
 
-## ⚡ 4. Global Package Manager Toolchains
+## 4. Global Package Manager Toolchains
 
-### 📦 Global NPM Tools
+### Global NPM Tools
 Install with `npm install -g <package>`:
 - **`vercel`** — Vercel cloud deployment CLI
 - **`eas-cli`** — Expo Application Services (React Native / mobile app builds)
@@ -116,7 +116,7 @@ Install with `npm install -g <package>`:
 - **`@okxweb3/a2a-node`** — OKX Web3 Agent-to-Agent protocol daemon
 - **`pear`** — P2P decentralized app runtime by Holepunch
 
-### 🐍 Pipx & UV Standalone Python Tools
+### Pipx & UV Standalone Python Tools
 Install with `uv tool install <tool>` or `pipx install <tool>`:
 - **`free-claude-code`** (`fcc-init`, `free-claude-code`) — Autonomous AI coding CLI
 - **`litellm` & `litellm-proxy`** — Unified multi-LLM proxy server
@@ -127,7 +127,7 @@ Install with `uv tool install <tool>` or `pipx install <tool>`:
 
 ---
 
-## ⛓️ 5. Web3, Blockchain & Zero-Knowledge Toolchains
+## 5. Web3, Blockchain & Zero-Knowledge Toolchains
 
 - **Foundry** (Ethereum smart contract development framework):
   - Provides: `forge`, `cast`, `anvil`, `chisel`, `foundryup` (in `~/.foundry/bin`)
@@ -146,7 +146,7 @@ Install with `uv tool install <tool>` or `pipx install <tool>`:
 
 ---
 
-## 🧩 6. IDE Extensions
+## 6. IDE Extensions
 
 Compatible with **Antigravity IDE**, **VS Code**, and **VSCodium**:
 
@@ -159,7 +159,7 @@ Compatible with **Antigravity IDE**, **VS Code**, and **VSCodium**:
 
 ---
 
-## 🖨️ 7. Hardware & OCR Language Packs
+## 7. Hardware & OCR Language Packs
 
 - **NVIDIA GPU Stack**: `nvidia-open`, `nvidia-prime`, `nvidia-settings`, `envycontrol`
 - **Screen Snip OCR (Tesseract)**:
@@ -172,7 +172,7 @@ Compatible with **Antigravity IDE**, **VS Code**, and **VSCodium**:
 
 ---
 
-## 🚀 8. Automated One-Click Provisioning Script
+## 8. Automated One-Click Provisioning Script
 
 To install every single application, runtime, and toolchain above on a fresh system, run:
 

@@ -7,7 +7,6 @@ bibata-cursor-theme
 ttf-material-symbols-variable-git
 ttf-readex-pro
 ttf-rubik-vf
-ttf-twemoji
 otf-space-grotesk
 wlogout
 fuzzel

@@ -32,7 +32,7 @@ AbstractBackgroundWidget {
 
     readonly property string speechText: {
         const level = Math.round(ResourceUsage.memoryUsedPercentage * 100);
-        return "Headache level: " + level + "% 🧠";
+        return "Headache level: " + level + "% ";
     }
 
     function triggerPet() {
@@ -58,7 +58,7 @@ AbstractBackgroundWidget {
     }
 
     function spawnHeartParticle() {
-        const emojis = ["💖", "✨", "⭐", "🐤", "💛", "🧠"];
+        const emojis = ["•", "○", "✦", "★", "◈"];
         const emoji = emojis[Math.floor(Math.random() * emojis.length)];
         const rx = (Math.random() - 0.5) * 60;
         particleModel.append({
@@ -231,7 +231,7 @@ AbstractBackgroundWidget {
                     }
 
                     StyledText {
-                        text: "Buffer Buddy 🐣"
+                        text: "Buffer Buddy "
                         font.pixelSize: Appearance.font.pixelSize.smallest
                         color: Appearance.colors.colOnPrimaryContainer
                         opacity: 0.6
